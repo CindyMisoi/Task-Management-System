@@ -21,7 +21,7 @@ $router->get('/tasks', 'TaskController@index');
 // get a specific task
 $router->get('/tasks/{id}', 'TaskController@show');
 // update a task
-$router->patch('/tasks/{id}', 'TaskController@update');
+$router->put('/tasks/{id}', 'TaskController@update');
 // delete a task
 $router->delete('/tasks/{id}', 'TaskController@destroy');
 
