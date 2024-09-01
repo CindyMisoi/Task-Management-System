@@ -20,6 +20,8 @@ $router->get('/', function () use ($router) {
 $router->get('/tasks', 'TaskController@index');
 // get a specific task
 $router->get('/tasks/{id}', 'TaskController@show');
+// create a new task
+$router->post('/tasks', 'TaskController@store');
 // update a task
 $router->put('/tasks/{id}', 'TaskController@update');
 // delete a task

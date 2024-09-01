@@ -56,6 +56,21 @@ class TaskController extends Controller
 
         return response()->json($task);
     }
+
+    // create a new task
+    public function store(Request $request)
+    {
+        $validator = Validator::make($request->all(), Task::$rules);
+
+        if ($validator->fails()) {
+            return response()->json(['error' => $validator->messages()], 422);
+        }
+
+        $task = Task::create($request->all());
+
+        return response()->json($task, 201);
+    }
+
     // update a task
     public function update(Request $request, $id)
     {
@@ -74,6 +89,7 @@ class TaskController extends Controller
         // Only update the fields that are intended to be updated
         $task->update([
             'title' => $request->input('title'),
+            'description' => $request->input('description'),
             'status' => $request->input('status'),
             'due_date' => $request->input('due_date'),
         ]);
