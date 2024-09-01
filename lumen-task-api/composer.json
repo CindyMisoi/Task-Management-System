@@ -1,0 +1,17 @@
+{
+    "name": "laravel/lumen-task-api",
+    "autoload": {
+        "psr-4": {
+            "Laravel\\LumenTaskApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "CindyMisoi",
+            "email": "crmisoi2k@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/lumen": "^9.0"
+    }
+}
