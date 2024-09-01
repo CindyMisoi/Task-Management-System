@@ -13,8 +13,7 @@
 |
 */
 
-$router->post('/tasks', 'TaskController@store');
+$router->get('/', function () use ($router) {
+    return $router->app->version();
+});
 $router->get('/tasks', 'TaskController@index');
-$router->get('/tasks/{id}', 'TaskController@show');
-$router->put('/tasks/{id}', 'TaskController@update');
-$router->delete('/tasks/{id}', 'TaskController@destroy');
