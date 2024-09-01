@@ -10,9 +10,9 @@ class Task extends Model
     
     // make it public for other files outside class to access
     public static $rules = [
-        'title' => 'max:255',
+        'title' => 'required|max:255',
         'description' => 'nullable|max:255',
-        'status' => 'in:pending,completed',
-        'due_date' => 'date|after:today'
+        'status' => 'required|in:pending,completed',
+        'due_date' => 'required|date|after:today'
     ];
 }
