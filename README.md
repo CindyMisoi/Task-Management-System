@@ -6,6 +6,8 @@
 [![Postman](https://img.shields.io/badge/Postman-%23FF6C37.svg)](https://www.postman.com/) 
 [![ThunderClient](https://img.shields.io/badge/ThunderClient-%23000000.svg)](https://www.thunderclient.io/)
 
+This project is a simple RESTful API built with Lumen that allows users to manage tasks. It provides basic CRUD (Create, Read, Update, Delete) operations for tasks and includes additional features such as task filtering, pagination, and search functionality.
+
 
 ## Official Documentation
 
