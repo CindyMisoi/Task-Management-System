@@ -58,7 +58,7 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 
 Ensure that your .env file is correctly configured for your PostgreSQL database:
 
-    ```bash
+ ```bash
     DB_CONNECTION=pgsql
     DB_HOST=127.0.0.1
     DB_PORT=5432
