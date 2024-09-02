@@ -9,7 +9,23 @@
 This project is a simple RESTful API built with Lumen that allows users to manage tasks. It provides basic CRUD (Create, Read, Update, Delete) operations for tasks and includes additional features such as task filtering, pagination, and search functionality.
 
 
-## Official Documentation
+## Table of Contents
+
+* Installation
+* Configuration
+* Database
+* API Endpoints
+    * Create a Task
+    * Get All Tasks
+    * Get a Specific Task
+    * Update a Task
+    * Delete a Task
+* Validation
+* Bonus Features
+    * Task Filtering
+    * Pagination
+    * Search
+* License
 
 Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
 
