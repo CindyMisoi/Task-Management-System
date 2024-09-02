@@ -122,6 +122,8 @@ To create this table, a migration is included. Run it with:
         "status": "completed",
         "due_date": "2024-12-31"
         }
+    ```
+
    * Response:
         * 200 OK: Returns the updated task.
         * 404 Not Found: If the task does not exist.
