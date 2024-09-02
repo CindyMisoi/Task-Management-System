@@ -56,16 +56,16 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 
 ## Configuration
 
-Ensure that your `.env` file is correctly configured for your PostgreSQL database:
+Ensure that your `.env` file is properly configured for your PostgreSQL database by adding the following settings:
 
-    ```bash 
-        DB_CONNECTION=pgsql
-        DB_HOST=127.0.0.1
-        DB_PORT=5432
-        DB_DATABASE=task_management
-        DB_USERNAME=your_username
-        DB_PASSWORD=your_password
-    ```
+```bash
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=task_management
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
 
 ## Database
 The tasks table schema includes the following fields:
@@ -84,21 +84,20 @@ To create this table, a migration is included. Run it with:
 
 
 ## API Endpoints
-1. **Update a Task:**
+1. **Create a Task:**
    * Method: `POST`
    * Endpoint: `/tasks`
    * Request Body:
      ```json
      {
-       "title": "Updated Task Title",
-       "description": "Updated Task Description",
+       "title": "New Task Title",
+       "description": "New Task Description",
        "status": "completed",
        "due_date": "2024-12-31"
      }
      ```
    * Response:
-     * `200 OK`: Returns the updated task.
-     * `404 Not Found`: If the task does not exist.
+     * `201 Created`:Returns the created task.
 
 
 2. **Get all tasks:**
@@ -133,7 +132,7 @@ To create this table, a migration is included. Run it with:
 
 5. **Delete a task:**
     * Method: DELETE
-    * Endpoint: /api/tasks/{id}
+    * Endpoint: /tasks/{id}
     * Response:
         * `204 No Content`: If the deletion was successful.
         * `404 Not Found`: If the task does not exist.
