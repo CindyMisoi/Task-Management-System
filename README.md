@@ -111,22 +111,22 @@ To create this table, a migration is included. Run it with:
         * 200 OK: Returns the task with the specified ID.
         * 404 Not Found: If the task does not exist.
 
-4. **Update a task:**
-    * Method: PUT
-    * Endpoint: /tasks/{id}
-    * Request Body:
-    ```bash
-        {
-        "title": "Updated Task Title",
-        "description": "Updated Task Description",
-        "status": "completed",
-        "due_date": "2024-12-31"
-        }
-    ```
+4. **Update a Task:**
+   - **Method**: `PUT`
+   - **Endpoint**: `/tasks/{id}`
+   - **Request Body**:
+     ```json
+     {
+       "title": "Updated Task Title",
+       "description": "Updated Task Description",
+       "status": "completed",
+       "due_date": "2024-12-31"
+     }
+     ```
+   - **Response**:
+     - `200 OK`: Returns the updated task.
+     - `404 Not Found`: If the task does not exist.
 
-   * Response:
-        * 200 OK: Returns the updated task.
-        * 404 Not Found: If the task does not exist.
 
 5. **Delete a task:**
     * Method: DELETE
