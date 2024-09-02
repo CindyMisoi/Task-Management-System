@@ -146,18 +146,16 @@ All incoming requests are validated to ensure required fields are provided and d
 * status: Required, string, must be either "pending" or "completed".
 * due_date: Required, date, must be a future date.
 
-If validation fails, the API returns a 422 Unprocessable Content response with detailed error messages.
+If validation fails, the API returns a `422 Unprocessable Content` response with detailed error messages.
 
 
 ## Bonus Features
 1. **Task Filtering:**
 Tasks can be filtered by status and due_date.
 
-Filter by status:
-* Endpoint: /tasks?status=pending
+* Filter by status: Endpoint: /tasks?status=pending
 
-Filter by due_date:
-* Endpoint: /tasks?due_date=2024-12-31
+* Filter by due_date: Endpoint: /tasks?due_date=2024-12-31
 
 2. **Pagination:**
 Pagination is available on the task listing endpoint. By default, it returns 10 tasks per page. You can specify the page number using the page query parameter.
