@@ -56,15 +56,16 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 
 ## Configuration
 
-Ensure that your .env file is correctly configured for your PostgreSQL database:
+Ensure that your `.env` file is correctly configured for your PostgreSQL database:
 
- ```bash
-    DB_CONNECTION=pgsql
-    DB_HOST=127.0.0.1
-    DB_PORT=5432
-    DB_DATABASE=task_management
-    DB_USERNAME=your_username
-    DB_PASSWORD=your_password
+    ```bash 
+        DB_CONNECTION=pgsql
+        DB_HOST=127.0.0.1
+        DB_PORT=5432
+        DB_DATABASE=task_management
+        DB_USERNAME=your_username
+        DB_PASSWORD=your_password
+    ```
 
 ## Database
 The tasks table schema includes the following fields:
