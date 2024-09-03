@@ -71,7 +71,7 @@ DB_PASSWORD=your_password
 The tasks table schema includes the following fields:
 
 * id: Primary key, auto-incrementing.
-* title: Required, unique, string.
+* title: Required, string.
 * description: Optional, text.
 * status: Enum with default value "pending".
 * due_date: Date, must be a future date.
@@ -81,6 +81,7 @@ The tasks table schema includes the following fields:
 To create this table, a migration is included. Run it with:
     ```bash
     php artisan migrate
+    ```
 
 
 ## API Endpoints
